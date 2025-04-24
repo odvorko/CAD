@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav style="margin-bottom: 20px;">
+        <a href="./">HTML Catalog Client</a> |
+        <a href="http://localhost:3001/">React Management Client</a>
+    </nav>
+
+    <h1>Available Products Catalog</h1>
+
+    <div id="status-messages" class="message status-message"></div>
+    <div id="error-messages" class="message error-message"></div>
+
+
+    <div id="product-list-section">
+        <h2>Products List</h2>
+        <button id="refresh-list-button">Refresh List</button>
+
+        <ul id="product-list">
+        </ul>
+    </div>
+    <script src="script.js" defer></script>
+
+</body>
+</html>
