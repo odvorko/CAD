@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:3000'; // <-- !!! IMPORTANT: Change this for deployment !!!
+const API_BASE_URL = 'http://54.195.128.196'; // <-- !!! IMPORTANT: Change this for deployment !!!
 
 // Function to get all products
 // Corresponds to: GET /products

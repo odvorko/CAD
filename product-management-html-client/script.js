@@ -4,7 +4,7 @@
 // Define the base URL for your Rails API
 // During local development: http://localhost:3000
 // IMPORTANT: Change this to your AWS instance public IP or domain for deployment
-const API_BASE_URL = 'http://localhost:3000'; // <--- THIS LINE MUST BE HERE AND UNCOMMENTED
+const API_BASE_URL = 'http://54.195.128.196'; // <--- THIS LINE MUST BE HERE AND UNCOMMENTED
 
 // --- Get References to DOM Elements ---
 const statusMessagesDiv = document.getElementById('status-messages');

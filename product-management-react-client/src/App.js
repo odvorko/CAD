@@ -173,7 +173,7 @@ function App() {
   return (
     <div className="App">
        <nav style={{ marginBottom: '20px', paddingBottom: '10px', borderBottom: '1px solid #ccc' }}>
-           <a href="../product-management-html-client/index.html" style={{ marginRight: '15px', textDecoration: 'none' }}>HTML Catalog Client</a>
+           <a href="http://54.195.128.196/html/" style={{ marginRight: '15px', textDecoration: 'none' }}>HTML Catalog Client</a>
            {' | '}
            <a href="./" style={{ marginLeft: '15px', textDecoration: 'none' }}>React Management Client</a>
        </nav>
