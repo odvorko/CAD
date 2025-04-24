@@ -1,0 +1,16 @@
+# test/fixtures/products.yml
+# Use basic test data here
+# This creates a product instance available in your tests as 'products(:one)'
+
+one:
+  name: MyString
+  description: MyText
+  price: 9.99
+  available: true # You can specify false if needed for specific tests
+
+# Optionally, add another product instance
+# two:
+#   name: Another Product
+#   description: Another Description
+#   price: 15.50
+#   available: false
