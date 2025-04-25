@@ -1,7 +1,7 @@
 # config/routes.rb
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
+  root "your_controller#your_action"
   # Resources route for the Product model.
   # 'only' option restricts the generated routes to just the standard CRUD operations we've implemented.
   resources :products, only: [ :index, :show, :create, :update, :destroy ]
