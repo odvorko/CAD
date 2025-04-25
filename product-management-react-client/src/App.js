@@ -78,7 +78,6 @@ function App() {
     setProductToEdit(null);
     setSelectedProduct(null);
     setCurrentView('list');
-    clearMessages();
   };
 
   const handleSubmit = async (productData) => {
@@ -114,18 +113,15 @@ function App() {
          setIsLoading(false);
      }
   };
-  const clearMessages = () => {
-
-  };
 
 
   const renderContent = () => {
     if (error) {
-        return <div style={{ color: 'red', marginBottom: '10px', fontWeight: 'bold' }}>Error: {error}</div>;
+        return <div className="message error-message">Error: {error}</div>;
     }
 
     if (isLoading) {
-        return <div style={{ fontWeight: 'bold' }}>Loading...</div>;
+        return <div style={{ fontWeight: 'bold', textAlign: 'center' }}>Loading...</div>;
     }
 
     switch (currentView) {
@@ -148,7 +144,7 @@ function App() {
           />
         );
       case 'edit':
-         if (!productToEdit) return <div style={{color: 'red'}}>Error: No product selected for editing.</div>;
+         if (!productToEdit) return <div className="message error-message">Error: No product selected for editing.</div>;
         return (
           <ProductForm
             product={productToEdit}
@@ -157,7 +153,7 @@ function App() {
           />
         );
       case 'details':
-         if (!selectedProduct) return <div style={{color: 'red'}}>Error: No product selected for details.</div>;
+         if (!selectedProduct) return <div className="message error-message">Error: No product selected for details.</div>;
         return (
            <ProductDetails
              product={selectedProduct}
@@ -165,21 +161,24 @@ function App() {
            />
         );
       default:
-        return <div>Unknown application state.</div>;
+        return <div className="message error-message">Unknown application state.</div>;
     }
   };
 
 
   return (
     <div className="App">
-       <nav style={{ marginBottom: '20px', paddingBottom: '10px', borderBottom: '1px solid #ccc' }}>
-          <a href="/" style={{ marginRight: '15px', textDecoration: 'none' }}>HTML Catalog Client</a>
-           {' | '}
-           <a href="./" style={{ marginLeft: '15px', textDecoration: 'none' }}>React Management Client</a>
+       <nav className="main-nav">
+          <a href="/">HTML Catalog Client</a>
+           <span> | </span>
+           <a href="./">React Management Client</a>
        </nav>
 
        <h1>Product Management</h1>
-      {renderContent()}
+
+       <div className="container">
+         {renderContent()}
+       </div>
     </div>
   );
 }

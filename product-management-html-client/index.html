@@ -8,24 +8,29 @@
 </head>
 <body>
 
-    <nav style="margin-bottom: 20px;">
-        <a href="./">HTML Catalog Client</a> |
-        <a href="http://54.195.128.196/react">React Management Client</a>
-    </nav>
+    <div class="container">
+        <nav class="main-nav">
+            <a href="./">HTML Catalog Client</a>
+            <span> | </span>
+            <a href="http://54.195.128.196/react">React Management Client</a>
+        </nav>
 
-    <h1>Available Products Catalog</h1>
+        <h1>Available Products Catalog</h1>
 
-    <div id="status-messages" class="message status-message"></div>
-    <div id="error-messages" class="message error-message"></div>
+        <div id="status-messages" class="message status-message"></div>
+        <div id="error-messages" class="message error-message"></div>
 
 
-    <div id="product-list-section">
-        <h2>Products List</h2>
-        <button id="refresh-list-button">Refresh List</button>
+        <div id="product-list-section" class="section-block">
+            <h2>Products List</h2>
+            <button id="refresh-list-button" class="btn btn-primary">Refresh List</button>
 
-        <ul id="product-list">
-        </ul>
+            <ul id="product-list" class="product-list">
+
+            </ul>
+        </div>
     </div>
+
     <script src="script.js" defer></script>
 
 </body>

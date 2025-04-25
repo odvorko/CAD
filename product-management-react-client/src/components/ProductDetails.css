@@ -1,0 +1,25 @@
+.product-details-container {
+    padding: var(--spacing-unit) calc(var(--spacing-unit) * 1.5);
+}
+
+.product-details-container h2 {
+   margin-top: 0;
+   border-bottom: 1px solid var(--border-color);
+   padding-bottom: var(--spacing-unit);
+   margin-bottom: var(--spacing-unit);
+}
+
+.product-details-container p {
+   margin-bottom: 0.75rem;
+}
+
+.product-details-container p strong {
+   display: inline-block;
+   min-width: 120px;
+   margin-right: 0.5rem;
+}
+
+.details-actions {
+   margin-top: var(--spacing-unit) * 1.5;
+   text-align: center;
+}

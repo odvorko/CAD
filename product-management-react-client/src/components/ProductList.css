@@ -1,0 +1,48 @@
+.product-list-container {
+}
+
+.product-list-container h2 {
+   margin-top: 0;
+}
+
+.filter-options {
+   margin-bottom: var(--spacing-unit);
+}
+
+.filter-options label {
+   font-weight: normal;
+   margin-left: 0.5rem;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--spacing-unit);
+}
+
+.product-list li {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-unit);
+    margin-bottom: var(--spacing-unit);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-list-item-details {
+    flex-grow: 1;
+    margin-right: var(--spacing-unit);
+}
+
+.product-list li button {
+   margin-left: 8px;
+}
+
+.no-products-message {
+    margin-top: var(--spacing-unit);
+    font-style: italic;
+    color: #666;
+}
