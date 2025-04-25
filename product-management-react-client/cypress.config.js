@@ -8,7 +8,7 @@ module.exports = defineConfig({
     },
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
     // --- Add or update the baseUrl here ---
-    baseUrl: 'http://localhost:3001', // *** Set this to your React app's dev server URL ***
+    baseUrl: 'http://localhost:3000', // *** Set this to your React app's dev server URL ***
     // ---------------------------------------
   },
 });
